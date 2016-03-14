@@ -1,0 +1,72 @@
+
+.ld-container {
+	width:450px;
+	margin:10px;
+	padding:10px;
+	border:1px dotted #c0c0c0;
+}
+
+.ld-btn-like {
+	text-align:center;
+	margin:0;
+	width:30px;
+	height:30px;
+}
+
+.ld-btn-dislike {
+	text-align:center;
+	margin:0;
+	width:30px;
+	height:30px;
+}
+
+.ld-img-like, .ld-img-dislike{
+	width:16px;
+	height:20px;
+}
+
+.ld-stats-bar {
+	margin:5px 0px;
+	height:5px;
+	width:350px;
+	font-size:0px;
+	line-height:0px;
+	border:1px solid #e0e0e0;
+	background-color:#ffffff;
+}
+
+.ld-bar-like {
+	float:left;
+	margin:0;
+	height:5px;
+	width:0px;
+	font-size:0px;
+	line-height:0px;
+	background-color:#008000;
+}
+
+.ld-bar-dislike {
+	float:right;
+	margin:0;
+	height:5px;
+	width:0px;
+	font-size:0px;
+	line-height:0px;
+	background-color:#d00000;
+}
+
+.ld-clear-both {
+	clear:both;
+	margin:0;
+	height:0px;
+	width:0px;
+	font-size:0px;
+	line-height:0px;
+}
+
+.ld-stats-txt {
+	color:#808080;
+	font-family:arial;
+	font-size:13px;
+}
+

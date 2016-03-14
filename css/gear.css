@@ -1,0 +1,95 @@
+p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.ld-btn-like{
+	background: transparent;
+	border: 2px solid rgb(242, 237, 237);
+	float: left;
+
+}
+.ld-btn-dislike{
+	background: transparent;
+	border: 2px solid rgb(242, 237, 237);
+	float: left;
+}
+.space{
+	width: 100%;
+	height: 120px;
+	background-color:#d5d5d5;
+}
+.name{
+	float: left;
+	font-size: 33px;
+	color: #656565;
+	margin-left: 15%;
+	padding-top: 50px;
+	background-color:#d5d5d5;
+}
+.point{
+	float: right;
+	font-size: 28px;
+	color: gray;
+	margin-right: 10%;
+	padding-top: 20px;
+}
+.total{
+	float: right;
+	margin-right: 23px;
+	font-size: 80px;
+}
+.sub{
+	font-size:18px;
+	float: right;
+	margin-top:20px;
+}
+.pic{
+	width: 600px;
+	margin-left: 25%;
+	margin-top: 20px;
+}
+
+.review{
+	background-color: #d5d5d5;
+	height: 100px;
+}
+.rating{
+	background-color: white;
+	font-size: 25px;
+	margin-top: -40px;
+}
+.Theme{
+	margin-left: 25%;
+	float:left;
+	margin-top: 1%;
+	color: #656565;
+}
+
+.discription{
+	height:50px;
+	background-color:rgb(242, 237, 237);
+	margin-bottom:30px;
+}
+.dis{
+	margin-left: 25%;
+	margin-top:10px;
+	font-size: 20px;
+	color: #656565;
+}
+p1{
+	margin-left: 10px;
+}
+.pointtext{
+float: left;      
+    width: 88px;
+	margin-right: 40px;
+"}
+.votebar{ background:#000; width:500px; height:15px; position:relative; 
+    /* float: left; */
+    width: 500px;
+    margin-left: 74px;
+    margin-top: 11px;
+}
+    .a_1, .a_2{ position:absolute; top:0; height:15px;}
+    .a_1{ left:0; background:#2ED286; color:grey; font-size:15px;z-index: 10;}
+    .a_2{ right:0; background:#dbdbdb; color:grey; font-size:15px;z-index: 10;}

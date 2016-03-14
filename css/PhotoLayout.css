@@ -1,0 +1,212 @@
+.items-wrap {
+	background-color: #F2EDED;
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 120px 5px 0;
+	background-color:#e9edf0;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.items-wrap::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #F2EDED;
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.6s;
+	transition: opacity 0.6s;
+	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	pointer-events: none;
+}
+
+.container--open .items-wrap::after {
+	opacity: 0;
+}
+
+.bigzone{
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0px 0 0;
+	flex: 1 0 50%;
+	overflow: hidden;
+	height: 50%;
+	outline: none;
+
+	border-width: 0 2.5px 10px 5px;
+	background: white;
+}
+
+.bigzone0{
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0px 0 0;
+	flex: 1 0 50%;
+	overflow: hidden;
+	height: 50%;
+	outline: none;
+
+	border-width: 0 2.5px 10px 2.5px;
+	background: white;
+}
+
+.itemL{
+	position: relative;
+	-webkit-flex: 1 0 50%;
+	flex: 1 0 50%;
+	overflow: hidden;
+	height: 500px;
+	outline: none;
+	border-width: 0 5px 0px;
+	
+}
+.bigimgstyle{
+	position: absolute;
+	top: 50%;
+	min-height: 100%;
+	width: 150%;
+	-webkit-transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
+	transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+	animation: bigimage 10s;
+	-webkit-animation:bigimage 10s;
+	
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count:infinite;
+	
+	-webkit-animation-direction:alternate;
+	animation-direction:alternate;
+    
+}
+@-webkit-keyframes bigimage {
+    from {left:10px;}
+    to {left:-30px;}
+}
+
+@keyframes bigimage {
+    from {left:10px;}
+    to {left:-30px;}
+}
+
+.itemS {
+	position: relative;
+	-webkit-flex: 1 0 50%;
+	flex: 1 0 50%;
+	overflow: hidden;
+	height: 250px;
+	outline: none;
+	background: #2a2e39;
+}
+
+.item {
+	position: relative;
+	-webkit-flex: 1 0 25%;
+	flex: 1 0 25%;
+	overflow: hidden;
+	height: 250px;
+	outline: none;
+	border-width: 0 5px 10px;
+	background: #2a2e39;
+}
+
+.itemL,.itemS,.item,.itemG:hover{
+	cursor:pointer;
+}
+.item__image {
+	position: absolute;
+	top: 50%;
+	min-height: 100%;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
+	transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.item:hover .item__image,.itemS:hover .item__image,.itemS0:hover .item__image {
+	opacity: 1;
+	-webkit-transform: translate3d(0, -50%, 0);
+	transform: translate3d(0, -50%, 0);
+}
+
+.item__title {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 1em;
+	color: #dbdbdb;
+	font-size: 1.85em;
+	font-family: "Playfair Display", Georgia, serif;
+	line-height: 1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	opacity: 0.5;
+}
+
+.item:hover .item__title,.itemS:hover .item__title,.itemS0:hover .item__title {
+	opacity: 1;
+	-webkit-transform: translate3d(0, -20px, 0);
+	transform: translate3d(0, -	20px, 0);
+}
+
+
+
+.itemG {
+	position: relative;
+	-webkit-flex: 1 33.3%;
+	flex: 1 0 33.3%;
+	overflow: hidden;
+	height: 300px;
+	outline: none;
+	border-width: 0 5px 10px;
+}
+.itemG__image {
+	position: absolute;
+	top: 50%;
+	min-height: 100%;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transform: translate3d(0, -50%, 0) scale3d(1, 1, 1);
+	transform: translate3d(0, -50%, 0) scale3d(1, 1, 1);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+.itemG:hover .itemG__image:hover  {
+	opacity: 1;
+	-webkit-transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
+	transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
+}
+.itemG__title {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 1em;
+	color: black;
+	font-size: 1.85em;
+	font-family: "Playfair Display", Georgia, serif;
+	line-height: 1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	opacity: 0.5;
+}
+.itemG:hover .itemG__title:hover {
+	opacity: 1;
+	-webkit-transform: translate3d(0, -20px, 0);
+	transform: translate3d(0, -	20px, 0);
+}
+

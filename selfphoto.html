@@ -1,0 +1,59 @@
+
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Exposure</title>
+		<meta name="description" content="A Professional Prospective of Photography." />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/self.css">
+		<script src="jquery/jquery-2.1.1.min.js"></script>
+		<script src = "js/autoResizeImage.js"></script>
+		
+	</head>
+	<body>
+		<div id="mask"></div>
+		<div class="big_container">
+			<div class="cover">
+				<div class="titlelogo">
+					<img src="img/logo.png" width="180px"/>
+				</div> 
+				<div class="back">
+					<a href="index.php">
+						<img src = "img/systemimage/back.png" width="30px"/>
+					</a>
+				</div>
+			</div>
+			<div class="uploadtitle">
+				<div class="User">
+					<div class="selfie">
+						<img id = "UserAvatar" src = <?php echo "avatars/".$_SESSION[Username].".jpg" ?> width = "105" height = "105" onload = "autoResizeImage(this, 105, 105)" title = "Click to change avatar" />
+					</div>
+					<div class="realtitle"><?php echo "$_SESSION[Username]"?>
+						<form class ="review">
+							<input type="text" placeholder="#Personal Website"/>
+						</form>
+					</div>
+				</div>
+
+					<div class="selfNav">
+						<div class="selfNav1">
+							<a class="active" style="color:white" href="#" >LOGOUT</a>
+						</div>
+						<div class="selfNav1">
+							<a class="active" style="color:white" href="selfAbout.php">ABOUT</a>
+						</div>
+						<div class="selfNav2">
+							<a class="active" style="color:white" href="self.php">PHOTO</a>
+						</div>
+					</div>
+
+			</div>
+			
+		<div class="footer">
+				<p>All Rights Reserved 2015.</p>
+			</div>
+		</div>
+	</body>
+</html>
